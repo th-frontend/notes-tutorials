@@ -1,5 +1,8 @@
 # Schema For Knowledge Panel 
 
+
+### Usage Warning:
+
 We need to modifiy this snippet for each company we set this up for
 
 
