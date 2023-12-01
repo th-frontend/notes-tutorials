@@ -28,3 +28,4 @@ https://bsiadmin.com/portal/utility/cms_nav.php?dothis=confirmed
 ## Stagging Site Tool 
 
 ![Screenshot 2023-11-16 at 2 54 53 PM](https://github.com/th-frontend/notes-tutorials/assets/1509641/ef2c43c6-3517-4507-b9ad-c5b03d246a10)
+https://www.bsiadmin.com/portal/utility/staging_site_sync/index.php
