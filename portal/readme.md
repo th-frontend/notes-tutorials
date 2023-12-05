@@ -6,7 +6,7 @@ The core of our systems. This is a place to document your key portal tips and tr
 
 This is to be used if you are doing a bulk move of content from a dev site to a live site. 
 
-[[link]] 
+https://bsiadmin.com/portal/utility/copy_pages_new/copy_pages_new.php 
 
 
 ## Map Generator 
