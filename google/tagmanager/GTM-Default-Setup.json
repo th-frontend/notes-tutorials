@@ -1,0 +1,163 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-02-06 16:09:08",
+    "containerVersion": {
+        "path": "accounts/6215429818/containers/176521020/versions/0",
+        "accountId": "6215429818",
+        "containerId": "176521020",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6215429818/containers/176521020",
+            "accountId": "6215429818",
+            "containerId": "176521020",
+            "name": "hellogarageofatlanta",
+            "publicId": "GTM-MB4LVZDC",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1706638515992",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6215429818/containers/176521020/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-MB4LVZDC"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6215429818",
+                "containerId": "176521020",
+                "tagId": "4",
+                "name": "Google Tag",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{Measurement ID}}"
+                    }
+                ],
+                "fingerprint": "1706638705865",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6215429818",
+                "containerId": "176521020",
+                "tagId": "9",
+                "name": "Free Estimate Form Leads",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enhancedUserId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "leads"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{Measurement ID}}"
+                    }
+                ],
+                "fingerprint": "1707235685855",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6215429818",
+                "containerId": "176521020",
+                "triggerId": "8",
+                "name": "Confirmation Page Event",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "confirmation"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1706639558126"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6215429818",
+                "containerId": "176521020",
+                "variableId": "3",
+                "name": "Measurement ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-FQM9E7MBEK"
+                    }
+                ],
+                "fingerprint": "1706638675511",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6215429818",
+                "containerId": "176521020",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            }
+        ],
+        "fingerprint": "1707235748579",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6215429818/containers/176521020/versions/0?apiLink=version"
+    }
+}
