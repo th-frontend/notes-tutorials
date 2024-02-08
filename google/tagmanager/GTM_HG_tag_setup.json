@@ -1,0 +1,241 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-02-08 15:56:12",
+    "containerVersion": {
+        "path": "accounts/6216741885/containers/177251511/versions/0",
+        "accountId": "6216741885",
+        "containerId": "177251511",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6216741885/containers/177251511",
+            "accountId": "6216741885",
+            "containerId": "177251511",
+            "name": "apsfoundationrepair.com",
+            "publicId": "GTM-TT2HGKZ6",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1707401292389",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6216741885/containers/177251511/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-TT2HGKZ6"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "tagId": "25",
+                "name": "Google Tag",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{Measurement ID}}"
+                    }
+                ],
+                "fingerprint": "1707407499495",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "tagId": "26",
+                "name": "Leads Tag",
+                "type": "gaawe",
+                "notes": "********************\n****ATTENTION****\n********************\nIf site build task specifies a Google Goal dollar amount. Ex. (Google Goal: $XX)\nClick Tag Configuration section and enter it into the Event Parameters section:\n\nEvent Parameter            Value\ncurrency.........................USD\nvalue..............................XX",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enhancedUserId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "leads"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{Measurement ID}}"
+                    }
+                ],
+                "fingerprint": "1707407671078",
+                "firingTriggerId": [
+                    "24",
+                    "22",
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "triggerId": "5",
+                "name": "Confirmation Page Event",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "confirmation"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1707402784227"
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "triggerId": "22",
+                "name": "Step Sign Up Event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "stepSignupLoaded"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1707407499493"
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "triggerId": "24",
+                "name": "Booking Event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "newBooking"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1707407499495"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "variableId": "23",
+                "name": "Measurement ID",
+                "type": "c",
+                "notes": "********************\n****ATTENTION****\n********************\nEnter MEASUREMENT ID from Google Analytics in Value field above!!!",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-XXXXXXXXXX"
+                    }
+                ],
+                "fingerprint": "1707407542077",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6216741885",
+                "containerId": "177251511",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1707407772833",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6216741885/containers/177251511/versions/0?apiLink=version"
+    }
+}
