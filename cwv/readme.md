@@ -4,6 +4,7 @@ Tips & tricks to minimize site speed & cwv issues
 
 ### General images
 * Always set width and height attributes on all img tags, including svgs
+* Avoid png format for bitmap photos
 * Avoid using css classes to hide images/videos on mobile
 - Example:
 ```html
