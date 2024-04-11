@@ -1,9 +1,51 @@
-# Schema For Knowledge Panel 
+# Schema for Knowledge Panel
 
+## Usage Warning
 
-### Usage Warning:
+This snippet needs to be modified for each company you set it up for. It is not a one-size-fits-all solution.
 
-We need to modifiy this snippet for each company we set this up for
+## Schema Markup
+
+The provided code snippet is a JSON-LD (JavaScript Object Notation for Linked Data) schema markup that can be used to generate a knowledge panel for a company's about page. The schema follows the [schema.org](https://schema.org/) vocabulary.
+
+### Key Elements
+
+1. `@context`: Specifies the URL of the schema.org vocabulary used.
+2. `@type`: Indicates the type of entity being described, in this case, an `AboutPage`.
+3. `id`: The URL of the about page being described.
+4. `mainEntityOfPage`: The URL of the main website.
+5. `isPartOf`: Specifies that this about page is part of a larger website.
+6. `lastReviewed`: The date when the information was last reviewed.
+7. `reviewedBy`: The corporation that reviewed the information.
+8. `audience`: The intended audience for the about page (not specified in the example).
+9. `name`: The name of the about page.
+10. `about`: Provides detailed information about the company, including:
+    - `@type`: Specifies the type of entity, in this case, a `Corporation`.
+    - `id`: A unique identifier for the corporation.
+    - `description`: A detailed description of the company and its services.
+    - `name`: The company's name.
+    - `url`: The company's website URL.
+    - `mainEntityOfPage`: The main URL of the company's website.
+    - `sameAs`: URLs of the company's profiles on various online platforms.
+    - `additionalType`: Additional information about the company's field of work.
+    - `image`: URLs of the company's logo (not specified in the example).
+    - `alternateName`: Alternate names for the company.
+    - `legalName`: The company's legal name.
+    - `logo`: The URL of the company's logo.
+    - `address`: The company's physical address.
+    - `location`: The company's location.
+    - `founder`: Information about the company's founder.
+    - `award`: Any awards the company has received (not specified in the example).
+    - `employee`: Information about the company's employees (not specified in the example).
+    - `subOrganization`: Information about any sub-organizations of the company (not specified in the example).
+    - `contactPoint`: Information about how to contact the company (not specified in the example).
+    - `disambiguatingDescription`: Additional information to help distinguish the company from other entities.
+
+## Usage
+
+To use this schema markup, you would typically include the JSON-LD code within the `<head>` section of your HTML document, as shown in the example. This allows search engines and other applications to parse and understand the structured data about your company's about page.
+
+Remember to modify the code snippet for each company you set it up for, as the information will be specific to each organization.
 
 
 ```js
