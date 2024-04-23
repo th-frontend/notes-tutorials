@@ -17,7 +17,7 @@ Tips & tricks to minimize site speed & cwv issues
 />
 
 <!-- Sort of good, using data svg to avoid larger image load on mobile -->
-<!-- [Reference](https://swimburger.net/blog/web/web-performance-prevent-wasteful-hidden-image-requests#solution-code)
+<!-- [Reference](https://swimburger.net/blog/web/web-performance-prevent-wasteful-hidden-image-requests#solution-code) -->
 <picture>
     <source srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" media="(max-width: 640px)"> 
     <img src="/huuuuge-desktop-image.jpeg"
