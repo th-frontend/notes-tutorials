@@ -4,6 +4,7 @@ Tips & tricks to minimize site speed & cwv issues
 
 ### General images
 * Always set width and height attributes on all img tags, including svgs
+* Inline lcp image for best result. If not, add a preload link for lcp image
 * Avoid png format for bitmap photos
 * Avoid using css classes to hide images/videos on mobile
 - Example:
@@ -16,6 +17,7 @@ Tips & tricks to minimize site speed & cwv issues
 />
 
 <!-- Sort of good, using data svg to avoid larger image load on mobile -->
+<!-- [Reference](https://swimburger.net/blog/web/web-performance-prevent-wasteful-hidden-image-requests#solution-code)
 <picture>
     <source srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" media="(max-width: 640px)"> 
     <img src="/huuuuge-desktop-image.jpeg"
@@ -34,7 +36,7 @@ Tips & tricks to minimize site speed & cwv issues
 * Set up preload for your LCP and always check if an existing one needs to be updated when main message changes
 - Example:
 ```html
-<!-- preloads -->
+<!-- preloads for main message image -->
 <?php if ($thePage == "index") { ?>
 <link rel="preload" fetchpriority="high" href="https://cdn.treehouseinternetgroup.com/cdn-cgi/image/format=auto,quality=70/cms_images/606/mm-500.jpeg" as="image" media="(max-width: 499px)">
 <link rel="preload" fetchpriority="high" href="https://cdn.treehouseinternetgroup.com/cdn-cgi/image/format=auto,quality=70/cms_images/606/mm-800.jpeg" as="image" media="(min-width: 500px) and (max-width: 799px)">
