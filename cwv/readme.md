@@ -28,6 +28,29 @@ Tips & tricks to minimize site speed & cwv issues
     />
 </picture>
 ```
+* For responsive background images, wrap default size in @media to avoid downloading multiple images  
+- Example:
+```html
+<!-- this will still download the default image as well as the media queried image -->
+.main-slide.slide1 { background:url('/slide-1.jpg'); }
+@media screen (min-width:641px) and (max-width:1024px) {
+    .main-slide.slide1 {background:url('/slide-1-md.jpg');}
+}
+@media screen and (max-width:640px) {
+    .main-slide.slide1 { background:url('/slide-1-sm.jpg'); }
+}
+
+<!-- avoid by wrapping default image in it's own media query -->
+@media screen (min-width:1025px) {
+    .main-slide.slide1 { background:url('/slide-1.jpg'); }
+}
+@media screen (min-width:641px) and (max-width:1024px) {
+    .main-slide.slide1 {background:url('/slide-1-md.jpg');}
+}
+@media screen and (max-width:640px) {
+    .main-slide.slide1 { background:url('/slide-1-sm.jpg'); }
+}
+```
 
 ### Main message images
 * Inline <img> for main message instead of using background images when possible
@@ -46,7 +69,7 @@ Tips & tricks to minimize site speed & cwv issues
 
 ### Lazyloading
 * Don't lazy load above the fold images
-* To lazyload on mobile only you can use the following php snippet
+* To lazyload for mobile only, you can use the following php snippet
 ```html
 <img src="/big-desktop-image.jpeg" 
     width="300" 
