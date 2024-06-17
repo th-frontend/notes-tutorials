@@ -2,6 +2,32 @@
 
 Tips & tricks to minimize site speed & cwv issues
 
+### Preconnects/Preloads
+* Always place preconnect/preloads early in <head> so they're processed sooner
+- Example:
+```html
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[[title]]</title>
+
+    <!-- preconnects -->
+    <link rel="preconnect" href="https://cdn.treehouseinternetgroup.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- preloads -->
+    <link rel="preload" fetchpriority="high" href="" as="image" media="(max-width: 640px)">
+
+    <meta name="description" content="[[description]]">
+    <meta name="keywords" content="[[keywords]]">
+    <meta name="ahrefs-site-verification" content="06b55c0e0b6410adb261079a7020da80954b263f5aa13211d5454e27cc1e28a6">
+    <link rel="icon" href="https://cdn.treehouseinternetgroup.com/cms_images/1862/favicons.png">
+    [[custom_core_v3_9x]]
+    <style>[[inline_css]]</style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+```
+
 ### General images
 * Always set width and height attributes on all img tags, including svgs
 * Inline lcp image for best result. If not, add a preload link for lcp image
