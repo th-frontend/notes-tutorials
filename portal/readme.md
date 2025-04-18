@@ -13,7 +13,7 @@ https://bsiadmin.com/portal/utility/copy_pages_new/copy_pages_new.php
 
 Build a map with our cool new tool 
 
-http://172.18.12.10:8080/
+https://map-generator.teambasementsystems.com/
 
 ## CSS Bundler 
 
